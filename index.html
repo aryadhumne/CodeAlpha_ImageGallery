@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumina Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-dot"></span>
+        <span class="logo-text">Lumina</span>
+      </div>
+      <p class="tagline">A curated visual journey</p>
+    </div>
+  </header>
+
+  <!-- Filter Bar -->
+  <section class="filter-bar">
+    <div class="filter-inner">
+      <button class="filter-btn active" data-cat="all">All</button>
+      <button class="filter-btn" data-cat="nature">Nature</button>
+      <button class="filter-btn" data-cat="architecture">Architecture</button>
+      <button class="filter-btn" data-cat="people">People</button>
+      <button class="filter-btn" data-cat="abstract">Abstract</button>
+      <button class="filter-btn" data-cat="travel">Travel</button>
+    </div>
+  </section>
+
+  <!-- Gallery Grid -->
+  <main class="gallery" id="gallery">
+
+    <div class="card" data-cat="nature" data-index="0">
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80" alt="Sunlit mountain valley" loading="lazy" />
+        <div class="card-overlay">
+          <span class="card-label">Nature</span>
+          <p class="card-title">Mountain Valley</p>
+          <button class="zoom-btn" aria-label="Open fullscreen">&#x2922;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card tall" data-cat="architecture" data-index="1">
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80" alt="Modern glass skyscraper" loading="lazy" />
+        <div class="card-overlay">
+          <span class="card-label">Architecture</span>
+          <p class="card-title">Glass & Steel</p>
+          <button class="zoom-btn" aria-label="Open fullscreen">&#x2922;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="people" data-index="2">
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80" alt="Portrait of a woman" loading="lazy" />
+        <div class="card-overlay">
+          <span class="card-label">People</span>
+          <p class="card-title">Golden Hour</p>
+          <button class="zoom-btn" aria-label="Open fullscreen">&#x2922;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card wide" data-cat="travel" data-index="3">
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1200&q=80" alt="Lake landscape at sunrise" loading="lazy" />
+        <div class="card-overlay">
+          <span class="card-label">Travel</span>
+          <p class="card-title">Still Waters</p>
+          <button class="zoom-btn" aria-label="Open fullscreen">&#x2922;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="abstract" data-index="4">
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1558591710-4b4a1ae0f7cb?w=800&q=80" alt="Abstract colour waves" loading="lazy" />
+        <div class="card-overlay">
+          <span class="card-label">Abstract</span>
+          <p class="card-title">Colour Waves</p>
+          <button class="zoom-btn" aria-label="Open fullscreen">&#x2922;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="nature" data-index="5">
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=800&q=80" alt="Forest path in morning mist" loading="lazy" />
+        <div class="card-overlay">
+          <span class="card-label">Nature</span>
+          <p class="card-title">Misty Forest</p>
+          <button class="zoom-btn" aria-label="Open fullscreen">&#x2922;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card tall" data-cat="people" data-index="6">
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&q=80" alt="Man with beard portrait" loading="lazy" />
+        <div class="card-overlay">
+          <span class="card-label">People</span>
+          <p class="card-title">Character Study</p>
+          <button class="zoom-btn" aria-label="Open fullscreen">&#x2922;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="architecture" data-index="7">
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1555993539-1732b0258235?w=800&q=80" alt="Geometric architecture ceiling" loading="lazy" />
+        <div class="card-overlay">
+          <span class="card-label">Architecture</span>
+          <p class="card-title">Geometry Above</p>
+          <button class="zoom-btn" aria-label="Open fullscreen">&#x2922;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="travel" data-index="8">
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80" alt="Tropical beach at dusk" loading="lazy" />
+        <div class="card-overlay">
+          <span class="card-label">Travel</span>
+          <p class="card-title">Dusk Shore</p>
+          <button class="zoom-btn" aria-label="Open fullscreen">&#x2922;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card wide" data-cat="abstract" data-index="9">
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1515405295579-ba7b45403062?w=1200&q=80" alt="Abstract paint splatter" loading="lazy" />
+        <div class="card-overlay">
+          <span class="card-label">Abstract</span>
+          <p class="card-title">Splattered Light</p>
+          <button class="zoom-btn" aria-label="Open fullscreen">&#x2922;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="nature" data-index="10">
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80" alt="Aerial view of green hills" loading="lazy" />
+        <div class="card-overlay">
+          <span class="card-label">Nature</span>
+          <p class="card-title">Emerald Hills</p>
+          <button class="zoom-btn" aria-label="Open fullscreen">&#x2922;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="architecture" data-index="11">
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1548636573-68a63bab20a8?w=800&q=80" alt="Old bridge over river" loading="lazy" />
+        <div class="card-overlay">
+          <span class="card-label">Architecture</span>
+          <p class="card-title">Ancient Bridge</p>
+          <button class="zoom-btn" aria-label="Open fullscreen">&#x2922;</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- No results message -->
+  <div class="no-results" id="noResults">No images in this category.</div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lb-close" id="lbClose" aria-label="Close">&#x2715;</button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous image">&#x2039;</button>
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Next image">&#x203A;</button>
+    <div class="lb-content">
+      <img src="" alt="" id="lbImg" />
+      <div class="lb-meta">
+        <span class="lb-cat" id="lbCat"></span>
+        <p class="lb-title" id="lbTitle"></p>
+        <p class="lb-counter" id="lbCounter"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
